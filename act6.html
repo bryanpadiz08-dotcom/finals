@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 6</title>
+</head>
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    <input type="number" id="num1" placeholder="Enter First number">
+    <input type="number" id="num2" placeholder="Enter Second number">
+
+    <select id="operation">
+        <option value="Add">Add</option>
+        <option value="Subtract">Subtract</option>
+        <option value="Multiply">Multiply</option>
+        <option value="Divide">Divide</option>
+    </select>
+
+    
+    <button onclick="calculate()">Compute</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            
+            let n1 = parseFloat(document.getElementById('num1').value);
+            let n2 = parseFloat(document.getElementById('num2').value);
+            let op = document.getElementById('operation').value;
+            let res = document.getElementById('result');
+
+            
+            if (op === "Add") {
+                res.textContent = "Result: " + (n1 + n2);
+            } else if (op === "Subtract") {
+                res.textContent = "Result: " + (n1 - n2);
+            } else if (op === "Multiply") {
+                res.textContent = "Result: " + (n1 * n2);
+            } else if (op === "Divide") {
+                if (n2 === 0) {
+                    res.textContent = "Cannot divide by zero";
+                } else {
+                    res.textContent = "Result: " + (n1 / n2);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 80px;
+}
+
+body.dark-mode{
+    background-color: black;
+    color:white;
+}
+
+img{
+    width: auto;
+    height: 200px;
+    border-radius: 10%;
+}
+.button{
+    transition: 0.5s, color 0.5s;
+}
+.darkmode{
+    background-color: black;
+    color:white
+}

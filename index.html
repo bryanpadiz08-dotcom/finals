@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Padiz - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+        <div class="bg-shape shape-4"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="brand">
+            <div class="logo" aria-hidden></div>
+            <div>
+                <div style="font-weight:600">Bryan Padiz</div>
+                <div class="muted" style="font-size:12px">Developer & Designer</div>
+            </div>
+        </div>
+        
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#lab">Lab Activities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="brand">
+                <div class="logo" aria-hidden></div>
+                <div>
+                    <div style="font-weight:600">Bryan Padiz</div>
+                    <div class="muted" style="font-size:12px">Developer & Designer</div>
+                </div>
+            </div>
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#resume" class="mobile-nav-link">Resume</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#lab" class="mobile-nav-link">Lab Activities</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="section-frame">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hello, I'm <span class="accent-text">Bryan Padiz</span></h1>
+                        <p class="lead">Motivated individual passionate about learning and continuous self-improvement</p>
+                        <p class="muted">Senior High School Graduate — STEM Strand</p>
+                        <div class="hero-actions">
+                            <a class="cta" href="#projects">View My Work</a>
+                            <a class="btn secondary" href="#contact">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="visual-element">
+                            <div class="code-snippet">
+                                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-string">"Bryan Padiz"</span>,</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-prop">skills</span>: [<span class="code-string">"Problem-Solving"</span>, <span class="code-string">"Critical Thinking"</span>, <span class="code-string">"Team Collaboration"</span>],</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-prop">passion</span>: <span class="code-string">"Learning and continuous self-improvement"</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-label="About">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="section-subtitle">Get to know me better</div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a motivated individual who values learning and continuous self-improvement. As a student, I am eager to apply my academic knowledge to real-world situations and gain meaningful experience. I am committed to growing within a professional environment where I can make a positive impact.</p>
+                        <p>My journey in professional development started during my on-the-job training at the Municipal Office of Matanao, where I gained valuable experience in office operations, documentation, and public service.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Months Experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">Honors</div>
+                                <div class="stat-label">Graduate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="profile-photo-container">
+                            <img src="pfp.jpg" alt="Bryan Padiz" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" aria-label="Resume">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <div class="section-subtitle">My professional background and qualifications</div>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-card">
+                        <div class="resume-icon">📄</div>
+                        <div class="resume-info">
+                            <h3>Bryan Padiz - Resume</h3>
+                            <p class="muted">Download or view my complete resume with detailed information about my education, experience, and skills.</p>
+                            <div class="resume-actions">
+                                <button class="btn" id="viewResumeBtn">View Resume</button>
+                                <a class="btn secondary" href="bryan pogi.pdf" download="Bryan_Padiz_Resume.pdf">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-label="Projects">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <div class="section-subtitle">A selection of my recent work</div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Modern Calculator -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="calculator-preview">
+                                <div class="calc-preview-display">123.45</div>
+                                <div class="calc-preview-buttons">
+                                    <div class="calc-preview-row">
+                                        <span class="calc-preview-btn operator">C</span>
+                                        <span class="calc-preview-btn operator">±</span>
+                                        <span class="calc-preview-btn operator">%</span>
+                                        <span class="calc-preview-btn operator">÷</span>
+                                    </div>
+                                    <div class="calc-preview-row">
+                                        <span class="calc-preview-btn">7</span>
+                                        <span class="calc-preview-btn">8</span>
+                                        <span class="calc-preview-btn">9</span>
+                                        <span class="calc-preview-btn operator">×</span>
+                                    </div>
+                                    <div class="calc-preview-row">
+                                        <span class="calc-preview-btn">4</span>
+                                        <span class="calc-preview-btn">5</span>
+                                        <span class="calc-preview-btn">6</span>
+                                        <span class="calc-preview-btn operator">-</span>
+                                    </div>
+                                    <div class="calc-preview-row">
+                                        <span class="calc-preview-btn">1</span>
+                                        <span class="calc-preview-btn">2</span>
+                                        <span class="calc-preview-btn">3</span>
+                                        <span class="calc-preview-btn operator">+</span>
+                                    </div>
+                                    <div class="calc-preview-row">
+                                        <span class="calc-preview-btn zero">0</span>
+                                        <span class="calc-preview-btn">.</span>
+                                        <span class="calc-preview-btn equals">=</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Modern Calculator</h3>
+                            <p class="muted">A sleek, responsive calculator with advanced functionality including memory operations, keyboard support, and dark/light mode.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn" data-modal="calculator">View Details</button>
+                                <button class="btn secondary" id="openCalculatorBtn">Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Countdown Timer -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="timer-preview">
+                                <div class="timer-preview-display">00:15:00</div>
+                                <div class="timer-preview-controls">
+                                    <div class="timer-preview-inputs">
+                                        <div class="timer-input-group">
+                                            <span class="timer-label">H</span>
+                                            <span class="timer-value">00</span>
+                                        </div>
+                                        <div class="timer-input-group">
+                                            <span class="timer-label">M</span>
+                                            <span class="timer-value">15</span>
+                                        </div>
+                                        <div class="timer-input-group">
+                                            <span class="timer-label">S</span>
+                                            <span class="timer-value">00</span>
+                                        </div>
+                                    </div>
+                                    <div class="timer-preview-buttons">
+                                        <span class="timer-preview-btn start">▶</span>
+                                        <span class="timer-preview-btn pause">⏸</span>
+                                        <span class="timer-preview-btn reset">↺</span>
+                                    </div>
+                                </div>
+                                <div class="timer-progress">
+                                    <div class="timer-progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Countdown Timer</h3>
+                            <p class="muted">A customizable countdown timer with progress visualization, audio alerts, and intuitive controls for precise time management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Audio API</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn" data-modal="timer">View Details</button>
+                                <button class="btn secondary" id="openTimerBtn">Live Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" aria-label="Experience">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>Work Experience</h2>
+                    <div class="section-subtitle">My professional journey</div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Senior High School</div>
+                        <div class="timeline-content">
+                            <h3>On-the-Job Training</h3>
+                            <div class="company">Municipal Office of Matanao</div>
+                            <p class="muted">Gained valuable experience during my on-the-job training as part of my Senior High School completion. Through this training, I developed a better understanding of office operations, documentation, and public service. It also enhanced my communication, teamwork, and organizational skills, preparing me for future professional opportunities.</p>
+                            <ul class="experience-details">
+                                <li>Assisted in filing and organizing official documents and records</li>
+                                <li>Encoded data and updated files using computer applications (e.g., MS Word, Excel)</li>
+                                <li>Supported staff in administrative and clerical tasks</li>
+                                <li>Learned about public service operations and local government processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Activities Section -->
+        <section id="lab" aria-label="Lab Activities">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>Lab Activities</h2>
+                    <div class="section-subtitle">Hands-on exercises and experiments</div>
+                </div>
+                <div class="lab-activities-grid">
+                    <div class="lab-card">
+                        <div class="lab-number">01</div>
+                        <div class="lab-content">
+                            <h3>Activity 1</h3>
+                            <p class="muted">Basic HTML structure and CSS styling fundamentals</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act1.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-number">02</div>
+                        <div class="lab-content">
+                            <h3>Activity 2</h3>
+                            <p class="muted">Responsive design and media queries implementation</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act2.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-number">03</div>
+                        <div class="lab-content">
+                            <h3>Activity 3</h3>
+                            <p class="muted">JavaScript DOM manipulation and event handling</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act3.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-number">04</div>
+                        <div class="lab-content">
+                            <h3>Activity 4</h3>
+                            <p class="muted">Form validation and user input processing</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act4.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab4">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-number">05</div>
+                        <div class="lab-content">
+                            <h3>Activity 5</h3>
+                            <p class="muted">API integration and data fetching techniques</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act5.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab5">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-number">06</div>
+                        <div class="lab-content">
+                            <h3>Activity 6</h3>
+                            <p class="muted">Advanced CSS animations and transitions</p>
+                            <div class="lab-actions">
+                                <a class="btn" href="./act6.html" target="_blank" rel="noopener noreferrer">Open Activity</a>
+                                <button class="btn secondary" data-modal="lab6">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-label="Contact">
+            <div class="section-frame">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <div class="section-subtitle">Let's work together</div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">bryanpadiz08@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">09435386366</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Buenavista, Bansalan Davao del Sur</div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Dribbble</a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="muted">Name</label>
+                                <input id="name" type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="muted">Email</label>
+                                <input id="email" type="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="muted">Subject</label>
+                                <input id="subject" type="text" placeholder="Project inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="muted">Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <div id="formError" class="error" role="status" aria-live="polite" style="display:none"></div>
+                            <button class="btn submit-btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <p>© 2023 Bryan Padiz. All rights reserved.</p>
+            <p class="muted">Designed and developed with passion</p>
+        </footer>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
+        <div class="modal" role="document">
+            <h3 id="modalTitle">Project Details</h3>
+            <p id="modalContent" class="muted">Project content will appear here.</p>
+            <div style="margin-top:14px;text-align:right">
+                <button class="btn" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
